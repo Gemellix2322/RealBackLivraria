@@ -12,6 +12,7 @@ namespace back_teste.Model
         public string username { get; set; }
         public string password { get; set; }
         public string? profile_picture { get; set; }
+        public int admin { get; set; }
         public UsuarioModel() { }
 
     }

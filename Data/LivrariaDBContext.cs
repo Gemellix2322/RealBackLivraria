@@ -9,8 +9,6 @@ namespace back_teste.Data
 
         public DbSet<UsuarioModel> users { get; set; }
 
-        public DbSet<MessagesModel> messages { get; set; }
-
         public DbSet<LivrosModel> livros { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -20,12 +18,6 @@ namespace back_teste.Data
                         .HasCharSet("utf8mb4");
 
             modelBuilder.Entity<UsuarioModel>(entity =>
-            {
-                entity.HasKey(e => e.id);
-            });
-
-
-            modelBuilder.Entity<MessagesModel>(entity =>
             {
                 entity.HasKey(e => e.id);
             });

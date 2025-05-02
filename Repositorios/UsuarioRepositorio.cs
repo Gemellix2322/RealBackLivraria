@@ -47,6 +47,7 @@ namespace back_teste.Repositorios
             usuarioPorId.username = newUsuario.username;
             usuarioPorId.password = newUsuario.password;
             usuarioPorId.profile_picture = newUsuario.profile_picture;
+            usuarioPorId.admin = newUsuario.admin;
             _dbContext.users.Update(usuarioPorId);
             await _dbContext.SaveChangesAsync();
             return usuarioPorId;

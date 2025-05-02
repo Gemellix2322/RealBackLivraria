@@ -32,17 +32,16 @@ namespace back_teste
 
             builder.Services.AddCors(options =>
             {
-                options.AddPolicy("AllowReactApp", policy =>
-                {
-                    policy.WithOrigins("http://localhost:3000")
-                          .AllowAnyHeader()
-                          .AllowAnyMethod();
-                });
+                options.AddPolicy("AllowAll",
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin()
+                               .AllowAnyHeader()
+                               .AllowAnyMethod();
+                    });
             });
 
             builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
-
-            builder.Services.AddScoped<IMessageRepositorio, MessageRepositorio>();
 
             builder.Services.AddScoped<ILivrosRepositorio, LivrosRepositorio>();
 
@@ -54,6 +53,7 @@ namespace back_teste
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            app.UseCors("AllowAll");
 
             app.UseHttpsRedirection();
 

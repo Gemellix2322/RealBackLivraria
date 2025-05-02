@@ -4880,11 +4880,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\iData_Gemelli\\Documents\\Cursos\\API\\BackLivrariaTeste\\BackLivrariaTeste\\BackLivrariaTeste.csproj",
+      "projectUniqueName": "C:\\Users\\iData_Gemelli\\Documents\\Cursos\\Projetos\\Livraria\\BackLivrariaTeste\\BackLivrariaTeste\\BackLivrariaTeste.csproj",
       "projectName": "BackLivrariaTeste",
-      "projectPath": "C:\\Users\\iData_Gemelli\\Documents\\Cursos\\API\\BackLivrariaTeste\\BackLivrariaTeste\\BackLivrariaTeste.csproj",
+      "projectPath": "C:\\Users\\iData_Gemelli\\Documents\\Cursos\\Projetos\\Livraria\\BackLivrariaTeste\\BackLivrariaTeste\\BackLivrariaTeste.csproj",
       "packagesPath": "C:\\Users\\iData_Gemelli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\iData_Gemelli\\Documents\\Cursos\\API\\BackLivrariaTeste\\BackLivrariaTeste\\obj\\",
+      "outputPath": "C:\\Users\\iData_Gemelli\\Documents\\Cursos\\Projetos\\Livraria\\BackLivrariaTeste\\BackLivrariaTeste\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
