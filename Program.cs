@@ -30,6 +30,15 @@ namespace back_teste
                 )
             );
 
+            builder.WebHost.ConfigureKestrel(serverOptions =>
+            {
+                // Configure para escutar em todas as interfaces
+                serverOptions.ListenAnyIP(
+                    // Use a porta fornecida pelo ambiente ou 5000 como padrão
+                    int.Parse(Environment.GetEnvironmentVariable("PORT") ?? "5000")
+                );
+            });
+
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy("AllowAll",
