@@ -15,4 +15,4 @@ WORKDIR /app
 COPY --from=build /app/out ./
 
 # Substitua "SeuProjeto.dll" pelo nome do seu arquivo .dll principal
-ENTRYPOINT ["dotnet", "SeuProjeto.dll"]
+ENTRYPOINT ["dotnet", "BackLivrariaTeste.dll"]
